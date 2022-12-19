@@ -1,0 +1,114 @@
+h1 {
+  font-family: jubilat, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.8rem;
+  color: black;
+}
+h2 {
+  font-family: jubilat, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: black;
+}
+h3 {
+  font-family: jubilat, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: black;
+}
+/* footer */
+h6 {
+  font-family: jubilat, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: black;
+}
+p {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  max-width: 65ch;
+}
+.elementor-widget-heading .elementor-heading-title {
+  font-family: jubilat, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+/* knapper */
+.elementor-widget-button .elementor-button {
+  background-color: #6e7d75;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: jubilat, serif;
+  font-weight: 400;
+}
+#wpforms-submit-164.wpforms-submit {
+  background-color: #6e7d75;
+  border-radius: 12px;
+  font-family: jubilat, serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+/* hover effekt */
+#wpforms-submit-164.wpforms-submit:hover,
+.elementor-button:hover {
+  background-color: #8a4f49;
+}
+a:hover {
+  color: #8a4f49;
+}
+#site-navigation {
+  margin-left: 40px;
+}
+#site-navigation-wrap {
+  font-family: jubilat, serif;
+  font-weight: 400;
+  margin-right: 40px;
+}
+.text-wrap {
+  font-size: 1.6rem;
+}
+#site-navigation-wrap .dropdown-menu li a:hover {
+  color: #8a4f49;
+}
+#site-header #site-logo #site-logo-inner a img {
+  margin-left: 20px;
+}
+.hamburger-box {
+  margin-right: 20px;
+}
+/* fjern border */
+a:focus {
+  outline: none !important;
+  border: none !important;
+}
+/* navigation header */
+#mobile-dropdown ul li a {
+  font-family: jubilat, serif;
+  font-weight: 400;
+}
+#mobile-dropdown ul li a:hover {
+  color: #8a4f49;
+}
+.menu-link:focus {
+  color: #8a4f49;
+}
+/* footer */
+/* #wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+  grid-template-rows: auto 1fr auto;
+} */
+
+main {
+  flex: 1;
+}
