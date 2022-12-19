@@ -34,7 +34,7 @@ margin: 40px;
 font-size:1.4rem;
 }
 .filter {
-margin-left:20px;
+margin-left:10px;
 }
 button {
 background-color: white;
@@ -120,10 +120,6 @@ padding: 20px;
 margin: 50px;
 font-size:1.6rem;
 }
-}
-
-#filtrering:focus {
-color:green;
 }
 
 /* web version */
@@ -243,7 +239,7 @@ function filtrering(){
 	console.log("KNAP EVT",filterYdelser)
 	visYdelser();
 
-	
+
 }
 
 function visYdelser() {
