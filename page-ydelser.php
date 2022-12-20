@@ -25,7 +25,6 @@ margin-top:60px;
 }
 img {
 max-width: 100%;
-/* aspect-ratio: 1/1; */
 object-fit: contain;
 }
 #filtrering {
@@ -47,7 +46,6 @@ article {
 background-color: #E6E3DD;   
 cursor: pointer;
 position: relative;
-/* text-align: center; */
 color: white;
 grid-area: 1/1;
 padding: 20px;
@@ -66,7 +64,6 @@ margin-bottom: 30px;
 	display: grid;
 	gap:20px;
 	grid-template-columns:0.5fr 1fr;
-
 }
 .grid-1, .grid-2 {
 place-self: center;
@@ -92,7 +89,6 @@ p {
   font-style: normal;
   color: black;
 }
-
 /* ipad version */
 @media (min-width: 750px) {
 .ydelser-container {
@@ -121,7 +117,6 @@ margin: 50px;
 font-size:1.6rem;
 }
 }
-
 /* web version */
 @media (min-width: 1000px) {
 .ydelser-container {
@@ -160,15 +155,12 @@ margin: 50px;
 font-size:1.8rem;
 }
 }
-
 article:hover{
 background-color:#E6E3DD80;
 }
-
 button:hover{
 color: #8A4F49;
 }
-
 </style>
 
 <section id="primary" class="content-area">
@@ -192,7 +184,6 @@ color: #8A4F49;
 	</article>
 	</div>
 </template>
-
 <script>
 let ydelser = [];
 let categories = [];
@@ -204,11 +195,9 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
 	getJson();
 } 
-
 // find url til json
 const url = "https://struckmanndesign.dk/kea/10_eksamensprojekt/eksamen-wp/wp-json/wp/v2/ydelse?per_page=100";
 const catUrl = "https://struckmanndesign.dk/kea/10_eksamensprojekt/eksamen-wp/wp-json/wp/v2/categories";
-
 // hent json
 async function getJson() {
 	let response = await fetch(url);
@@ -221,7 +210,6 @@ async function getJson() {
 	visYdelser();
 	opretKnapper();
 }
-
 function opretKnapper() {
 categories.forEach(cat =>{
 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-ydelse="${cat.id}">${cat.name}</button>`
@@ -233,15 +221,11 @@ function addEventListenersToButtons(){
 		elm.addEventListener("click", filtrering);
 	})
 }
-
 function filtrering(){
 	filterYdelser = this.dataset.ydelse;
 	console.log("KNAP EVT",filterYdelser)
 	visYdelser();
-
-
 }
-
 function visYdelser() {
 	liste.innerHTML = "";	// HTML indhold tømmes før der fyldes indhold ind i den
 	ydelser.forEach(ydelse => { // array'et ydelser løbes igennem og hver ydelse indsætte i HTML
@@ -256,7 +240,6 @@ function visYdelser() {
 	}
 	})
 }
-
 </script>
 </section>
 <?php get_footer(); ?>

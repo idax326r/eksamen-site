@@ -61,7 +61,6 @@ grid-template-columns: 0.8fr;
 gap:15px;
 padding: 25px;
 }
-
 .luk {
 font-family: jubilat, serif;
 color:black;
@@ -74,7 +73,6 @@ font-size:16px;
 .luk:hover{
 color: #8A4F49;
 }
-
 /* web version */
 @media (min-width: 750px) {
 .grid-container {
@@ -84,7 +82,6 @@ gap:15px;
 padding-left: 100px;
 padding-right:20px;
 }
-
 </style>
 
 <section id="primary">
@@ -139,6 +136,5 @@ document.querySelector(".luk").addEventListener("click", () => {
 })
 </script>
 </section>
-
 
 <?php get_footer(); ?>
